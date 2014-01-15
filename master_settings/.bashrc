@@ -31,3 +31,5 @@ source $rvm_path/scripts/completion
 PATH="/usr/local/mysql/bin:$PATH"
 PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
+
+# CHECK OUT MY SWEET SCRIPT!!!!
