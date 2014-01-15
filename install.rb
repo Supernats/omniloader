@@ -76,4 +76,7 @@ File.open(".bashrc", "w") do |f|
 end
 print "done\n"
 
+puts "-------------------------------------------------------------------------"
+puts "                              End OMNILOADER                             "
+puts "-------------------------------------------------------------------------"
 puts "ENJOY YOUR AWESOME TERMINAL"
