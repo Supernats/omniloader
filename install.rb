@@ -56,9 +56,10 @@ indent = system("git clone https://github.com/nathanaelkane/vim-indent-guides ~/
 puts indent ? "done" : "failed"
 
 print "Applying your .vimrc..."
-Dir.chdir(PATH)
-Dir.chdir("master_settings")
-vimrc_master = File.read(".vimrc")
+#Dir.chdir(PATH)
+#Dir.chdir("master_settings")
+vimrc_master = `curl https://raw.github.com/Supernats/omniloader/master/master_settings/.vimrc` #File.read(".bashrc")
+#vimrc_master = File.read(".vimrc")
 Dir.chdir
 File.open("vimrc", "w") do |f|
   f.puts vimrc_master
@@ -67,9 +68,9 @@ end
 print "done\n"
 
 print "Applying your .bashrc..."
-Dir.chdir(PATH)
-Dir.chdir("master_settings")
-bashrc_master = File.read(".bashrc")
+# Dir.chdir(PATH)
+# Dir.chdir("master_settings")
+bashrc_master = `curl https://raw.github.com/Supernats/omniloader/master/master_settings/.bashrc` #File.read(".bashrc")
 Dir.chdir
 File.open(".bashrc", "w") do |f|
   f.puts bashrc_master
