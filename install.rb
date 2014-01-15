@@ -15,7 +15,7 @@ print "Copying .vimrc..."
 vimrc_copy = File.exists?(".vimrc") ? File.read(".vimrc") : ""
 Dir.chdir("omniloader_setup")
 File.open("vimrc_copy", "w") do |f|
-  f.puts vimrc
+  f.puts vimrc_copy
 end
 Dir.chdir
 print "done\n"
@@ -24,7 +24,7 @@ print "Copying .bashrc..."
 bashrc_copy = File.exists?(".bashrc") ? File.read(".bashrc") : ""
 Dir.chdir("omniloader_setup")
 File.open("bashrc_copy", "w") do |f|
-  f.puts bashrc
+  f.puts bashrc_copy
 end
 Dir.chdir
 print "done\n"
