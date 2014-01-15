@@ -29,37 +29,31 @@ end
 Dir.chdir
 print "done\n"
 
-print "Installing pathogen.vim..."
+puts "Installing pathogen.vim..."
 pathogen = system("mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -so ~/.vim/autoload/pathogen.vim \
     https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim")
-print pathogen ? "done" : "failed"
-print "\n"
+puts pathogen ? "done" : "failed"
 
-print "Installing NERDTree..."
+puts "Installing NERDTree..."
 nerd = system("git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree.vim")
-print nerd ? "done" : "failed"
-print "\n"
+puts nerd ? "done" : "failed"
 
-print "Installing ctrlp.vim..."
+puts "Installing ctrlp.vim..."
 ctrlp = system("git clone https://github.com/kien/ctrlp.vim ~/.vim/bundle/ctrlp.vim")
-print ctrlp ? "done" : "failed"
-print "\n"
+puts ctrlp ? "done" : "failed"
 
-print "Installing Rainbow Parentheses..."
+puts "Installing Rainbow Parentheses..."
 rain = system("git clone https://github.com/kien/rainbow_parentheses.vim ~/.vim/bundle/rainbow_parentheses.vim")
-print rain ? "done" : "failed"
-print "\n"
+puts rain ? "done" : "failed"
 
-print "Installing Fugitive..."
+puts "Installing Fugitive..."
 fugitive = system("git clone https://github.com/tpope/vim-fugitive ~/.vim/bundle/vim-fugitive")
-print fugitive ? "done" : "failed"
-print "\n"
+puts fugitive ? "done" : "failed"
 
-print "Installing Indent Guides..."
+puts "Installing Indent Guides..."
 indent = system("git clone https://github.com/nathanaelkane/vim-indent-guides ~/.vim/bundle/vim-indent-guides")
-print indent ? "done" : "failed"
-print "\n"
+puts indent ? "done" : "failed"
 
 print "Applying your .vimrc..."
 Dir.chdir(PATH)
