@@ -1,6 +1,4 @@
 #!/usr/bin/env ruby
-# require_relative "homebrew_install"
-# require_relative "test_script"
 
 puts "-------------------------------------------------------------------------"
 puts "                             Begin OMNILOADER                            "
@@ -32,25 +30,23 @@ Dir.chdir
 print "done\n"
 
 print "Installing homebrew..."
-Dir.chdir()
-Dir.chdir("omniloader_setup")
-Dir.mkdir("homebrew")
-hb = system("curl -L https://github.com/Homebrew/homebrew/tarball/master | tar xz --strip 1 -C homebrew")
+Dir.chdir(PATH)
+hb = system("./homebrew_install.rb")
 print hb ? "done" : "failed"
 print "\n"
 
 print "Installing ack..."
-ack = false#system("brew install ack")
+ack = system("brew install ack")
 print ack ? "done" : "failed"
 print "\n"
 
 print "Installing fish..."
-fish = false#system("brew install fish")
+fish = system("brew install fish")
 print fish ? "done" : "failed"
 print "\n"
 
 print "Installing Janus..."
-janus = false#system("curl -Lo- https://bit.ly/janus-bootstrap | bash")
+janus = system("curl -Lo- https://bit.ly/janus-bootstrap | bash")
 print janus ? "done" : "failed"
 print "\n"
 
