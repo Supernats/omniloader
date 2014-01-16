@@ -62,7 +62,7 @@ vimrails = system(
 puts vimrails ? "done" : "failed"
 
 vimrails = system("git clone git://github.com/tpope/vim-rails.git")
-vimrails = system("git clonge git://github.com/tpope/vim-bundler.git")
+vimrails = system("git clone git://github.com/tpope/vim-bundler.git")
 
 print "Applying your .vimrc..."
 vimrc_master = `curl https://raw.github.com/Supernats/omniloader/master/master_settings/.vimrc`
