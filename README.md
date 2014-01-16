@@ -10,9 +10,9 @@ Ruby scripts to install / uninstall my favorite terminal settings.
 Install should:
 + Make directory to hold all files
 + Copy existing settings new files for safe keeping
-+ Homebrew install ack and fish
 + change terminal font
-+ install janus
++ install pathogen and vim plugins
++ set git config
 + load new vimrc, bashrc, fishconfig
 
 Uninstall should:
