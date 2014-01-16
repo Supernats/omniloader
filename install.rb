@@ -55,7 +55,7 @@ puts indent ? "done" : "failed"
 
 puts "Installing rails.vim..."
 vimrails = system(
-  "git clone git://github.com/tpope/vim-rails.git ~/.vim/bundle/vim-rails" &&
+  "git clone git://github.com/tpope/vim-rails.git  ~/.vim/bundle/vim-rails" &&
   "git clone git://github.com/tpope/vim-bundler.git ~/.vim/bundle/vim-bundler"
 )
 puts vimrails ? "done" : "failed"
