@@ -60,8 +60,11 @@ vimrails = system(
 )
 puts vimrails ? "done" : "failed"
 
-vimrails = system("git clone git://github.com/tpope/vim-rails.git")
-vimrails = system("git clone git://github.com/tpope/vim-bundler.git")
+puts "Installing commentary.vim..."
+commentary = system(
+  "git clone git://github.com/tpope/vim-commentary.git ~/.vim/bundle/vim-commentary"
+)
+puts commentary ? "done" : "failed"
 
 print "Applying your .vimrc..."
 vimrc_master = `curl https://raw.github.com/Supernats/omniloader/master/master_settings/.vimrc`
