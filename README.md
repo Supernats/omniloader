@@ -2,7 +2,7 @@ omniloader
 ==========
 
 Here's how to make the magic happen:  
-`curl https://raw.github.com/Supernats/omniloader/master/install.rb | ruby`  
+`  curl https://raw.github.com/Supernats/omniloader/master/install.rb | ruby  `  
 
 Uninstall isn't working yet. I'll probably but that in after I finish my final project for App Academy.
 
