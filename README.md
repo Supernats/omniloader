@@ -1,22 +1,24 @@
 omniloader
 ==========
 
-Because I switch computers a lot.
+Here's how to make the magic happen:  
+`curl https://raw.github.com/Supernats/omniloader/master/install.rb | ruby`  
 
-Ruby scripts to install / uninstall my favorite terminal settings.
+Uninstall isn't working yet. I'll probably but that in after I finish my final project for App Academy.
 
+Because I switch computers a lot.  
+Ruby scripts to install / uninstall my favorite terminal settings.  
 <strong>TODO:</strong>
 
 Install should:
-+ Make directory to hold all files
-+ Copy existing settings new files for safe keeping
-+ change terminal font
-+ install pathogen and vim plugins
-+ set git config
-+ load new vimrc, bashrc, fishconfig
++ [x] -  Make directory to hold all files
++ [x] - Copy existing settings new files for safe keeping
++ [ ] - change terminal font
+    + Really? No one cares about that. Also, that jazz be super terminal dependent.  
++ [x] - install pathogen and vim plugins
++ [ ] -  set git config
++ [x] - load new vimrc, bashrc, fishconfig
 
 Uninstall should:
-+ uninstall janus
-+ uninstall ack and fish
-+ revert to old vimrc, bashrc, terminal font, etc.
-+ delete installation directory
++ [ ] - revert to old vimrc, bashrc, terminal font, etc.
++ [ ] - delete installation directory
