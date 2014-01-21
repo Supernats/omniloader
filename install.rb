@@ -83,6 +83,12 @@ javascript = system(
 )
 puts javascript ? "done" : "failed"
 
+puts "Installing rename.vim..."
+rename = system(
+  "git clone https://github.com/danro/rename.vim.git ~/.vim/bundle/vim-rename"
+)
+puts rename ? "done" : "failed"
+
 print "Applying your .vimrc..."
 vimrc_master = `curl https://raw.github.com/Supernats/omniloader/master/master_settings/.vimrc`
 Dir.chdir
