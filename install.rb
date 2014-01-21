@@ -71,6 +71,18 @@ commentary = system(
 )
 puts commentary ? "done" : "failed"
 
+puts "Installing Vim Backbone..."
+backbone = system(
+  "git clone git://github.com/mklabs/vim-backbone.git ~/.vim/bundle/vim-backbone"
+)
+puts backbone ? "done" : "failed"
+
+puts "Installing Vim-Javascript..."
+javascript = system(
+  "git clone https://github.com/pangloss/vim-javascript.git ~/.vim/bundle/vim-javascript"
+)
+puts javascript ? "done" : "failed"
+
 print "Applying your .vimrc..."
 vimrc_master = `curl https://raw.github.com/Supernats/omniloader/master/master_settings/.vimrc`
 Dir.chdir
