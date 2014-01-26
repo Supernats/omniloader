@@ -89,6 +89,30 @@ rename = system(
 )
 puts rename ? "done" : "failed"
 
+puts "Installing TLib.vim..."
+tlib = system(
+  "git clone https://github.com/tomtom/tlib_vim.git ~/.vim/bundle/tlib"
+)
+puts tlib ? "done" : "failed"
+
+puts "Installing MW Utils..."
+mwutils = system(
+  "git clone https://github.com/MarcWeber/vim-addon-mw-utils.git ~/.vim/bundle/mw_utils"
+)
+puts mwutils ? "done" : "failed"
+
+puts "Installing Vim Snippets..."
+snippets = system(
+  "git clone https://github.com/honza/vim-snippets.git ~/.vim/bundle/snippets"
+)
+puts snippets ? "done" : "failed"
+
+puts "Installing Snipmate.vim..."
+snipmate = system(
+  "git clone https://github.com/garbas/vim-snipmate.git ~/.vim/bundle/snipmate"
+)
+puts snipmate ? "done" : "failed"
+
 print "Applying your .vimrc..."
 vimrc_master = `curl https://raw.github.com/Supernats/omniloader/master/master_settings/.vimrc`
 Dir.chdir
