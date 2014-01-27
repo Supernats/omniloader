@@ -151,6 +151,12 @@ end
 print "done\n"
 puts
 
+print "Setting Git credentials..."
+name = system("git config user.name Supernats")
+email = system("git config user.email nathanseither@gmail.com")
+puts name && email ? "done" : "failed"
+puts
+
 puts "-------------------------------------------------------------------------"
 puts "                              End OMNILOADER                             "
 puts "-------------------------------------------------------------------------"

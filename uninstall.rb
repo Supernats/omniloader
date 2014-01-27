@@ -20,7 +20,7 @@ puts
 Dir.chdir
 print "Deleting .vim directrory..."
 vim_dir = system("rm -rf .vim")
-print vim_dir ? "done" : "failed"
+puts vim_dir ? "done" : "failed"
 puts 
 
 print "Reverting to old .vimrc..."
@@ -28,20 +28,24 @@ File.open("vimrc", "w") do |f|
   f.puts vimrc_copy
 end
 `mv vimrc .vimrc`
-print "done\n"
+puts "done"
 puts
 
 print "Reverting to old .bashrc..."
 File.open(".bashrc", "w") do |f|
   f.puts bashrc_copy
 end
-print "done\n"
+puts "done"
 puts
 
 print "Removing setupd directory..."
 remove = system("rm -rf omniloader_setup")
 print remove ? "done" : "failed"
-puts 
+
+print "Resetting Git credentials..."
+name = system('git config user.name "App Acaddemy Student"')
+email = system('git config user.email "student@appacademy.io"')
+puts name && email ? "done" : "failed"
 
 puts "-------------------------------------------------------------------------"
 puts "                              End OMNILOADER                             "
