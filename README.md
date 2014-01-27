@@ -1,12 +1,15 @@
 omniloader
 ==========
 
-Here's how to make the magic happen:  
+Install
+-------
 <pre><code>curl https://raw.github.com/Supernats/omniloader/master/install.rb | ruby</code></pre>
 
-Uninstall isn't working yet. I'll probably but that in after I finish my final project for App Academy.
+Uninstall
+---------
+<pre><code>curl https://raw.github.com/Supernats/omniloader/master/uninstall.rb | ruby</code></pre>
 
-Because I switch computers a lot.  
+
 Ruby scripts to install / uninstall my favorite terminal settings.  
 <strong>TODO:</strong>
 
@@ -20,5 +23,5 @@ Install should:
 + [x] - load new vimrc, bashrc, fishconfig
 
 Uninstall should:
-+ [ ] - revert to old vimrc, bashrc, terminal font, etc.
-+ [ ] - delete installation directory
++ [x] - revert to old vimrc, bashrc, terminal font, etc.
++ [x] - delete installation directory

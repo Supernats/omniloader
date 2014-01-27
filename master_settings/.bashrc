@@ -12,7 +12,7 @@ export PROMPT_COMMAND="history -a"
 export MPORTS_DIR=/opt/local/bin:/opt/local/sbin
 # prefer macports stuff
 PATH=$MPORTS_DIR:$PATH
-#export EMACS='/opt/local/bin/emacs'
+export EMACS='/opt/local/bin/emacs'
 export LS='/opt/local/bin/gls'
 
 alias e=emacs
@@ -21,6 +21,10 @@ alias l='ls'
 
 # I never remember to prefer pry
 alias irb='pry'
+
+# Git config
+git config user.name Supernats
+git config user.email nathanseither@gmail.com
 
 # fish is the best
 alias fish='exec '/Users/appacademy/Downloads/fish.app/Contents/Resources/base/bin/fish''
@@ -33,5 +37,3 @@ source $rvm_path/scripts/completion
 PATH="/usr/local/mysql/bin:$PATH"
 PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
-
-# CHECK OUT MY SWEET SCRIPT!!!!
