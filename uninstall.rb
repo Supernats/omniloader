@@ -42,11 +42,6 @@ print "Removing setupd directory..."
 remove = system("rm -rf omniloader_setup")
 print remove ? "done" : "failed"
 
-print "Resetting Git credentials..."
-name = system('git config user.name "App Acaddemy Student"')
-email = system('git config user.email "student@appacademy.io"')
-puts name && email ? "done" : "failed"
-
 puts "-------------------------------------------------------------------------"
 puts "                              End OMNILOADER                             "
 puts "-------------------------------------------------------------------------"
