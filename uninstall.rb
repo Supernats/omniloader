@@ -40,7 +40,8 @@ puts
 
 print "Removing setupd directory..."
 remove = system("rm -rf omniloader_setup")
-print remove ? "done" : "failed"
+puts remove ? "done" : "failed"
+puts
 
 puts "-------------------------------------------------------------------------"
 puts "                              End OMNILOADER                             "
