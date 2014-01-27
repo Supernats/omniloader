@@ -22,10 +22,6 @@ alias l='ls'
 # I never remember to prefer pry
 alias irb='pry'
 
-# Git config
-git config user.name Supernats
-git config user.email nathanseither@gmail.com
-
 # fish is the best
 alias fish='exec '/Users/appacademy/Downloads/fish.app/Contents/Resources/base/bin/fish''
 source .dotfiles/git-completion.bash
