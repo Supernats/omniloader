@@ -23,7 +23,7 @@ vim_dir = system("rm -rf .vim")
 puts vim_dir ? "done" : "failed"
 puts 
 
-print "Reverting to old .vimrc..."
+puts "Reverting to old .vimrc..."
 File.open("vimrc", "w") do |f|
   f.puts vimrc_copy
 end
@@ -31,7 +31,7 @@ end
 puts "done"
 puts
 
-print "Reverting to old .bashrc..."
+puts "Reverting to old .bashrc..."
 File.open(".bashrc", "w") do |f|
   f.puts bashrc_copy
 end
