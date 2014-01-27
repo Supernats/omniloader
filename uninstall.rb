@@ -38,7 +38,7 @@ end
 print "done\n"
 puts
 
-prints "Removing setupd directory..."
+print "Removing setupd directory..."
 remove = system("rm -rf omniloader_setup")
 print remove ? "done" : "failed"
 puts 
