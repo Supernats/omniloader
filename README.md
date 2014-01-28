@@ -1,5 +1,7 @@
-omniloader
+Omniloader
 ==========
+
+NB: Currently, Omniloader does not take into account a pre-existing ~/.vim directory. This is soon to be remedied. Caveat emptor.  
 
 Install
 -------
