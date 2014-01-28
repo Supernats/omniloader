@@ -33,7 +33,9 @@ Current plugin package
 + [Vim-Rails](https://github.com/tpope/vim-rails.git)
     + Another gem from tpope. Run all your sweet generators and Rails commands from within your vim. Also does a bunch of rad stuff that you probably want to check his docs about.
 + [Commentary](https://github.com/tpope/vim-commentary.git)
-    + Comment and uncomment with ease: `(N)gcc` to comment N lines down, starting on the current. `gcu` to uncomment a block.
+    + Comment and uncomment with ease
+        + `(N)gcc` to comment N lines down, starting on the current
+        + `gcu` to uncomment a block.
 + [Backbone.vim](https://github.com/mklabs/vim-backbone.git)
     + A bunch of Backbone snippets. Bet you didn't see that one coming.
 + [Vim-Javascript](https://github.com/pangloss/vim-javascript.git)
