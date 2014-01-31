@@ -132,6 +132,13 @@ snipmate = system(
 puts snipmate ? "done" : "failed"
 puts
 
+puts "Installing VimIRC.vim..."
+irc = system(
+  "git clone https://github.com/vim-scripts/VimIRC.vim ~/.vim/bundle/vim-irc"
+)
+puts irc ? "done" : "failed"
+puts
+
 puts "Applying your .vimrc..."
 vimrc_master = `curl https://raw.github.com/Supernats/omniloader/master/master_settings/.vimrc`
 Dir.chdir
