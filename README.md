@@ -21,7 +21,7 @@ Current plugin package
 ----------------------
 
 + [Pathogen](https://github.com/tpope/vim-pathogen) 
-    + God mode for plugin managers. Tim Pope is all the hacks. You'll be seeing more of him in this list.
+    + God mode for plugin managers. [Tim Pope](https://github.com/tpope) is all the hacks. You'll be seeing more of him in this list.
 + [NERDTree](https://github.com/scrooloose/nerdtree)
     + File tree explorer. Super handy for making new files and directories.
 + [Ctrl-P](https://github.com/kien/ctrlp.vim)
