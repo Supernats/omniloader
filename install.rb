@@ -133,7 +133,7 @@ puts snipmate ? "done" : "failed"
 puts
 
 puts "Applying your .vimrc..."
-vimrc_master = `curl https://raw.github.com/Supernats/omniloader/master/master_settings/.vimrc`
+vimrc_master = `curl https://raw.github.com/Supernats/omniloader/master/dotfiles/.vimrc`
 Dir.chdir
 File.open("vimrc", "w") do |f|
   f.puts vimrc_master
@@ -143,7 +143,7 @@ puts "done"
 puts
 
 puts "Applying your .bashrc..."
-bashrc_master = `curl https://raw.github.com/Supernats/omniloader/master/master_settings/.bashrc`
+bashrc_master = `curl https://raw.github.com/Supernats/omniloader/master/dotfiles/.bashrc`
 Dir.chdir
 File.open(".bashrc", "w") do |f|
   f.puts bashrc_master
