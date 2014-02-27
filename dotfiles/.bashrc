@@ -1,6 +1,6 @@
 PROMPT_COLOR='\e[00m\e[38;05;166m'
 export PS1='\['$PROMPT_COLOR'\]\w\$\[\e[0m\] '
-export EDITOR=emacs
+export EDITOR=vim
 
 MILLION=1000000
 export HISTFILESIZE=$MILLION
@@ -18,6 +18,10 @@ export LS='/opt/local/bin/gls'
 alias e=emacs
 alias ls='$LS --color=auto'
 alias l='ls'
+
+# John's laptop made me use MacVim
+alias vim='mvim -v'
+alias vi='mvim -v'
 
 # I never remember to prefer pry
 alias irb='pry'
