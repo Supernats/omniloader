@@ -19,16 +19,11 @@ alias e=emacs
 alias ls='$LS --color=auto'
 alias l='ls'
 
-# John's laptop made me use MacVim
-alias vim='mvim -v'
-alias vi='mvim -v'
-
 # I never remember to prefer pry
 alias irb='pry'
 
 # fish is the best
 alias fish='exec '/Users/appacademy/Downloads/fish.app/Contents/Resources/base/bin/fish''
-source .dotfiles/git-completion.bash
 
 PATH=$PATH:$HOME/.rvm/bin
 source ~/.rvm/scripts/rvm
